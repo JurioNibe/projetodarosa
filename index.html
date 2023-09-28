@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
     <title>pedro</title>
     <style>
  
@@ -27,8 +28,48 @@
             margin-right: 100px;
             margin-top: -450px;
         }
-    </style>
-  
+        *{margin: 0; padding: 0;}
+
+    body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    }
+
+    .mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    }
+    .mainmenubtn:hover {
+    background-color: blue;
+    }
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+    }
+    .dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown:hover .dropdown-child {
+    display: block;
+    }
+    .mainmenubtn {
+        margin-top: 200px;
+        margin-left: 700px;
+    }
+
+</style>
 </head>
 <body>
     <!--parte do cabeçario-->
@@ -45,5 +86,15 @@
 </body>
 <img src="imagens/ae19d12b_480x480.jpg" href="meu pai é gay">
 <h1>Camisa seleção brasileira Amarela Fan</h1>
+<div class="dropdown">
+    <button class="mainmenubtn">Main Menu</button>
+    <div class="dropdown-child">
+        <a href="http://wwww.seudominio.com/pagina1.html">Sub Menu 1</a>
+        <a href="http://wwww.seudominio.com/pagina2.html">Sub Menu 2</a>
+        <a href="http://wwww.seudominio.com/pagina3.html">Sub Menu 3</a>
+        <a href="http://wwww.seudominio.com/pagina4.html">Sub Menu 4</a>
+        <a href="http://wwww.seudominio.com/pagina5.html">Sub Menu 5</a>
+    </div>
+    </div>
 
 </html>
