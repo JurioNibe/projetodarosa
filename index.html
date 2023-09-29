@@ -6,95 +6,112 @@
     <link rel="stylesheet" type="text/css"  href="estilo.css" />
     <title>pedro</title>
     <style>
- 
+         body {
+            background-color: rgb(255, 255, 255);
+            font-family: arial, helvetica, sans-serif;
+            font-size: 12px;
+         }
         header {
-            background-color: rgb(0,0,0);
-             padding: 30px;
-             margin: -10px;
-             text-align:center;
-             color: rgb(255,255,255);
-             font-size: 20px;
-             box-shadow: inset 4px 4px 9px 0px rgba(0,0,0,0.384); 
+           background-color: rgb(255, 255, 255);
+            padding: 30px;
+            color: rgb(255,255,255);
+            font-size: 20px;
+        }
+        header > img {
+          margin-top: 10px;
+          margin-left: 20px;
         }
 
+        header > h1 {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article#imagem {
+            background-color: rgb(197, 182, 182);
+            margin-left: 40px;
+            margin-right: 900px;
+            margin-top: 90px;
+            padding-top: 40px;
+            padding-right: 696px;
+            border-radius: 5px 5px 5px 5px;
+        }
+        
         img {
-            padding:;
-            margin-left: 60px;
-            margin-right: 300px;
-            margin-top: 50px;
+            margin-left: 180px;
+            margin-right: 200px;
+            margin-top: 0px;
         }
         h1 {
-            margin-left: 700px;
+            font-size: 30px;
+            margin-left: 750px;
             margin-right: 100px;
-            margin-top: -450px;
+            margin-top: -480px;
         }
         *{margin: 0; padding: 0;}
 
-    body{
-    font-family: arial, helvetica, sans-serif;
-    font-size: 12px;
-    }
+        .mainmenubtn {
+        font-size:20px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        padding:5px;
+        margin-top:20px;
+         }
+        .mainmenubtn:hover {
+        background-color: rgb(129, 129, 129);
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 800px;
+        }
+        .dropdown-child {
+        display: none;
+        background-color: rgb(189, 189, 189);
+        min-width: 200px;
+        }
+        .dropdown-child a {
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown:hover .dropdown-child {
+        display: block;
+        }
 
-    .mainmenubtn {
-    background-color: skyblue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding:20px;
-    margin-top:20px;
-    }
-    .mainmenubtn:hover {
-    background-color: blue;
-    }
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    }
-    .dropdown-child {
-    display: none;
-    background-color: skyblue;
-    min-width: 200px;
-    }
-    .dropdown-child a {
-    color: blue;
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-    }
-    .dropdown:hover .dropdown-child {
-    display: block;
-    }
-    .mainmenubtn {
-        margin-top: 200px;
-        margin-left: 700px;
-    }
 
-</style>
+    </style>
 </head>
 <body>
     <!--parte do cabeçario-->
     <header>
-    <ul class="menu">
-        <li><a href="#">compras</a></li>
-        <li><a href="#">compras</a></li>
-        <li><a href="#">compras</a></li>
-        <li><a href="#">compras</a></li>
-    </ul>
-</header>
+        <img src="imagens/logo.webp" href="meu pai é gay">
+    </header>
 <!--fim do cabeçario-->
-    
-</body>
-<img src="imagens/ae19d12b_480x480.jpg" href="meu pai é gay">
-<h1>Camisa seleção brasileira Amarela Fan</h1>
-<div class="dropdown">
-    <button class="mainmenubtn">Main Menu</button>
-    <div class="dropdown-child">
-        <a href="http://wwww.seudominio.com/pagina1.html">Sub Menu 1</a>
-        <a href="http://wwww.seudominio.com/pagina2.html">Sub Menu 2</a>
-        <a href="http://wwww.seudominio.com/pagina3.html">Sub Menu 3</a>
-        <a href="http://wwww.seudominio.com/pagina4.html">Sub Menu 4</a>
-        <a href="http://wwww.seudominio.com/pagina5.html">Sub Menu 5</a>
-    </div>
-    </div>
+<!--conteudo principal--> 
+    <section>
+        <article id="imagem">
+            <img src="imagens/ae19d12b_480x480.jpg" href="meu pai é gay">
+        </article>
+    </section>
+    <section id="conteudo-principal">
+        <article>
+            <h1>Camisa seleção brasileira Amarela</h1>
+            <div class="dropdown">
+                <button class="mainmenubtn">Tamanho:</button>
+                <div class="dropdown-child">
+                 <a href="http://wwww.seudominio.com/pagina1.html">P</a>
+                    <a href="http://wwww.seudominio.com/pagina2.html">M </a>
+                    <a href="http://wwww.seudominio.com/pagina3.html">G</a>
+                    <a href="http://wwww.seudominio.com/pagina4.html">GG</a>
+             </div>
+            </div>
+        </article>
 
+    </section>
+    <!--Fim do conteudo principal-->    
+</body>
 </html>
